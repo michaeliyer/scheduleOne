@@ -58,3 +58,13 @@ body {
     border: none;
     cursor: pointer;
   }
+
+  .day-item {
+    cursor: pointer; /* Indicates it's clickable */
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth hover effect */
+  }
+  
+  .day-item:hover {
+    color: #4CAF50; /* Highlight color */
+    text-decoration: underline; /* Optional underline effect */
+  }

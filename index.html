@@ -27,9 +27,35 @@
     </section>
 
     <section id="viewDaysSection" class="hidden">
-      <ul id="daysList"></ul>
-      <button class="close">X</button>
-    </section>
+        <ul id="daysList"></ul>
+        <div id="notesSection" class="hidden">
+          <h3>Notes for ID: <span id="currentId"></span></h3>
+
+          <!-- <p id="dateDisplay"></p> Displays the date and day of the week -->
+
+          <ul id="notesList"></ul>
+          <form id="addNoteForm">
+            <label for="noteContent">New Note:</label>
+            <input type="text" id="noteContent" placeholder="Enter note or URL" required>
+            <button type="submit">Add Note</button>
+          </form>
+          <button class="close">X</button>
+        </div>
+        <button class="close">X</button>
+      </section>
+
+      <div id="notesSection" class="hidden">
+        <h3>Notes for ID: <span id="currentId"></span></h3>
+        <p id="dateDisplay"></p> <!-- Field for the date and day of the week -->
+        <ul id="notesList"></ul>
+        <form id="addNoteForm">
+          <label for="noteContent">New Note:</label>
+          <input type="text" id="noteContent" placeholder="Enter note or URL" required>
+          <button type="submit">Add Note</button>
+        </form>
+        <button class="close">X</button>
+      </div>
+
 
     <section id="searchNotesSection" class="hidden">
       <input type="text" id="searchBar" placeholder="Search notes...">
